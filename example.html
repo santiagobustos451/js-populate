@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <title>Untitled Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <label for="primary">Primary Selector</label>
+            <select name="" id="primary">
+                <option value="0">Option 0</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+            </select>
+            <label for="secondary">Secondary Selector</label>
+            <select class="populate" name="" id="secondary" data-parent="primary">
+                <option value="0" data-parent-value="0">Option 0-0</option>
+                <option value="1" data-parent-value="0">Option 0-1</option>
+                <option value="2" data-parent-value="0">Option 0-2</option>
+                <option value="3" data-parent-value="1">Option 1-0</option>
+                <option value="4" data-parent-value="1">Option 1-1</option>
+                <option value="5" data-parent-value="1">Option 1-2</option>
+                <option value="6" data-parent-value="2">Option 2-0</option>
+                <option value="7" data-parent-value="2">Option 2-1</option>
+                <option value="8" data-parent-value="2">Option 2-2</option>
+            </select>
+            <label for="tertiary">Tertiary Selector</label>
+            <select class="populate" name="" id="tertiary" data-parent="secondary">
+                <option value="0" data-parent-value="0">Option 0-0-0</option>
+                <option value="1" data-parent-value="0">Option 0-0-1</option>
+                <option value="2" data-parent-value="0">Option 0-0-2</option>
+                <option value="3" data-parent-value="1">Option 0-1-0</option>
+                <option value="4" data-parent-value="1">Option 0-1-1</option>
+                <option value="5" data-parent-value="1">Option 0-1-2</option>
+                <option value="6" data-parent-value="2">Option 0-2-0</option>
+                <option value="7" data-parent-value="2">Option 0-2-1</option>
+                <option value="8" data-parent-value="2">Option 0-2-2</option>
+            </select>
+        </form>
+    </div>
+</body>
+</html>

@@ -14,6 +14,42 @@
     --rounded-small: .3rem;
 
     color: var(--color-light);
-    background-color: var(--color-dark);
+    background-color: var(--color-dark-transparent);
     font-family: Dosis,-apple-system, BlinkMacSystemFont, "Segoe UI",Roboto, Oxygen-Sans, Ubuntu, Cantarell,"Helvetica Neue", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 3rem;
+    background-color: var(--color-dark);
+    width: fit-content;
+    border-radius: var(--rounded-big);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+label {
+    color: var(--color-accent);
+}
+
+select {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    padding: 5px;
+    border: none;
+    border-radius: var(--rounded-small);
+}
+
+option.inactive {
+    display: none;
 }
